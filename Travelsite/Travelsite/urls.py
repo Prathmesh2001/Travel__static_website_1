@@ -16,9 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from traveller.views import about_page
+from traveller import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', about_page)
+    path('', views.home_page, name = 'landingpage'),
+    path('about/', views.about_page, name = 'aboutpage'),
+    path('contact/', views.contact_page, name = 'contactpage'),
+    path('home/', views.home_page, name = 'homepage'),
 ]

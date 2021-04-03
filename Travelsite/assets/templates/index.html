@@ -18,9 +18,9 @@
             <div class="container">
                 <h2 class="logo text-white">PSW</h2>
                 <ul class="nav-items">
-                    <li class="nav-item"><a href="{% static './index.html' %}">Home</a></li>
-                    <li class="nav-item"><a href="{% static './s1_about.html' %}">About</a></li>
-                    <li class="nav-item"><a href="{% static './s1_contact.html' %}">Contact</a></li>
+                    <li class="nav-item"><a href="/home">Home</a></li>
+                    <li class="nav-item"><a href="/about">About</a></li>
+                    <li class="nav-item"><a href="/contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -35,7 +35,7 @@
     <section class="showcase">
         <div class="container">
             <div class="row row-1">
-                <div class="img-box"><img src="../img/greenland.jpg" alt="greenland"></div>
+                <div class="img-box"><img src="{% static './img/greenland.jpg' %}" alt="greenland"></div>
                 <div class="text-box">
                     <h2 class="lg-heading">Greenland</h2>
                     <p class="text-gray">Greenland Is The Land Of Natural Beauty With scarce population and little pollution, Greenland is an oasis of natural beauty, and, as it comes with many Northern locations, it is pretty grandiose. 
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="row row-2">
-                <div class="img-box"><img src="../img/iceland.jpg" alt="iceland"></div>
+                <div class="img-box"><img src="{% static './img/iceland.jpg' %}" alt="iceland"></div>
                 <div class="text-box">
                     <h2 class="lg-heading">Iceland</h2>
                     <p class="text-gray">Iceland’s natural beauty is quite simply unparalleled, with the bewitching Northern Lights casting an otherworldly atmosphere over the island nation.
